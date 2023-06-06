@@ -620,4 +620,3 @@ hatchpath = element "hatchpath"
 ## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view) for more informaiton.
 view : List Attribute, List Node -> Node
 view = element "view"
-

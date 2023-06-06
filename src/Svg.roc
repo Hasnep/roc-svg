@@ -16,7 +16,6 @@ interface Svg
         g,
         marker,
         mask,
-        missingGlyph,
         svg,
         switch,
         symbol,
@@ -47,15 +46,6 @@ interface Svg
         fespecularlighting,
         fetile,
         feturbulence,
-        # Font elements
-        font,
-        fontFace,
-        fontFaceFormat,
-        fontFaceName,
-        fontFaceSrc,
-        fontFaceUri,
-        hkern,
-        vkern,
         # Gradient elements
         lineargradient,
         radialgradient,
@@ -85,14 +75,10 @@ interface Svg
         polyline,
         rect,
         # Text content elements
-        glyph,
-        glyphref,
         textpath,
         textElement,
-        tref,
         tspan,
         # Uncategorized elements
-        cursor,
         filter,
         hatchpath,
         view,
@@ -206,12 +192,6 @@ marker = element "marker"
 ## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask) for more informaiton.
 mask : List Attribute, List Node -> Node
 mask = element "mask"
-
-## Construct a `missing-glyph` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/missing-glyph) for more informaiton.
-missingGlyph : List Attribute, List Node -> Node
-missingGlyph = element "missing-glyph"
 
 ## Construct a `svg` element.
 ##
@@ -385,56 +365,6 @@ fetile = element "feTile"
 feturbulence : List Attribute, List Node -> Node
 feturbulence = element "feTurbulence"
 
-# Font elements
-
-## Construct a `font` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font) for more informaiton.
-font : List Attribute, List Node -> Node
-font = element "font"
-
-## Construct a `font-face` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face) for more informaiton.
-fontFace : List Attribute, List Node -> Node
-fontFace = element "font-face"
-
-## Construct a `font-face-format` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-format) for more informaiton.
-fontFaceFormat : List Attribute, List Node -> Node
-fontFaceFormat = element "font-face-format"
-
-## Construct a `font-face-name` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-name) for more informaiton.
-fontFaceName : List Attribute, List Node -> Node
-fontFaceName = element "font-face-name"
-
-## Construct a `font-face-src` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-src) for more informaiton.
-fontFaceSrc : List Attribute, List Node -> Node
-fontFaceSrc = element "font-face-src"
-
-## Construct a `font-face-uri` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-uri) for more informaiton.
-fontFaceUri : List Attribute, List Node -> Node
-fontFaceUri = element "font-face-uri"
-
-## Construct a `hkern` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/hkern) for more informaiton.
-hkern : List Attribute, List Node -> Node
-hkern = element "hkern"
-
-## Construct a `vkern` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/vkern) for more informaiton.
-vkern : List Attribute, List Node -> Node
-vkern = element "vkern"
-
 # Gradient elements
 
 ## Construct a `linearGradient` element.
@@ -581,18 +511,6 @@ rect = element "rect"
 
 # Text content elements
 
-## Construct a `glyph` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyph) for more informaiton.
-glyph : List Attribute, List Node -> Node
-glyph = element "glyph"
-
-## Construct a `glyphRef` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyphRef) for more informaiton.
-glyphref : List Attribute, List Node -> Node
-glyphref = element "glyphRef"
-
 ## Construct a `textPath` element.
 ##
 ## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath) for more informaiton.
@@ -605,12 +523,6 @@ textpath = element "textPath"
 textElement : List Attribute, List Node -> Node
 textElement = element "text"
 
-## Construct a `tref` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tref) for more informaiton.
-tref : List Attribute, List Node -> Node
-tref = element "tref"
-
 ## Construct a `tspan` element.
 ##
 ## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan) for more informaiton.
@@ -618,12 +530,6 @@ tspan : List Attribute, List Node -> Node
 tspan = element "tspan"
 
 # Uncategorized elements
-
-## Construct a `cursor` element.
-##
-## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/cursor) for more informaiton.
-cursor : List Attribute, List Node -> Node
-cursor = element "cursor"
 
 ## Construct a `filter` element.
 ##

@@ -98,7 +98,7 @@ interface Svg
         view,
 
     ]
-    imports [Attribute.{ Attribute }]
+    imports [Attribute.{ Attribute, attribute }]
 
 ## An SVG node, either an element or a text string.
 Node : [Element Str (List Attribute) (List Node), Text Str]
@@ -120,6 +120,28 @@ render = \node ->
             attributesStr = attributes |> List.map (\Attribute attributeKey attributeValue -> " \(attributeKey)=\"\(attributeValue)\"") |> Str.joinWith ""
             childrenStr = children |> List.map render |> Str.joinWith ""
             "<\(tagName)\(attributesStr)>\(childrenStr)</\(tagName)>"
+
+expect
+    width = Attribute.attribute "width"
+    height = Attribute.attribute "height"
+    xmlns = Attribute.attribute "xmlns"
+    cx = Attribute.attribute "cx"
+    cy = Attribute.attribute "cy"
+    r = Attribute.attribute "r"
+    fill = Attribute.attribute "fill"
+    out =
+        svg [width "100", height "100", xmlns "http://www.w3.org/2000/svg"] [
+            circle
+                [
+                    cx "50",
+                    cy "50",
+                    r "50",
+                    fill "red",
+                ]
+                [],
+        ]
+        |> render
+    out == "<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"50\" fill=\"red\"></circle></svg>"
 
 # Animation elements
 
@@ -620,4 +642,3 @@ hatchpath = element "hatchpath"
 ## See the element's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view) for more informaiton.
 view : List Attribute, List Node -> Node
 view = element "view"
-

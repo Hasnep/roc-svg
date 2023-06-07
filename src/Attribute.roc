@@ -6,18 +6,18 @@ interface Attribute
         additive,
         alignmentBaseline,
         amplitude,
-        attributename,
+        attributeName,
         azimuth,
-        basefrequency,
+        baseFrequency,
         baselineShift,
         begin,
         bias,
         by,
-        calcmode,
+        calcMode,
         class,
         clipPath,
+        clipPathUnits,
         clipRule,
-        clippathunits,
         color,
         colorInterpolation,
         colorInterpolationFilters,
@@ -25,7 +25,7 @@ interface Attribute
         cx,
         cy,
         d,
-        diffuseconstant,
+        diffuseConstant,
         direction,
         display,
         divisor,
@@ -33,7 +33,7 @@ interface Attribute
         dur,
         dx,
         dy,
-        edgemode,
+        edgeMode,
         elevation,
         end,
         exponent,
@@ -41,7 +41,7 @@ interface Attribute
         fillOpacity,
         fillRule,
         filter,
-        filterunits,
+        filterUnits,
         floodColor,
         floodOpacity,
         fontFamily,
@@ -55,8 +55,8 @@ interface Attribute
         from,
         fx,
         fy,
-        gradienttransform,
-        gradientunits,
+        gradientTransform,
+        gradientUnits,
         height,
         href,
         id,
@@ -68,31 +68,31 @@ interface Attribute
         k2,
         k3,
         k4,
-        kernelmatrix,
-        kernelunitlength,
-        keypoints,
-        keysplines,
-        keytimes,
+        kernelMatrix,
+        kernelUnitLength,
+        keyPoints,
+        keySplines,
+        keyTimes,
         lang,
-        lengthadjust,
+        lengthAdjust,
         letterSpacing,
         lightingColor,
-        limitingconeangle,
+        limitingConeAngle,
         markerEnd,
+        markerHeight,
         markerMid,
         markerStart,
-        markerheight,
-        markerunits,
-        markerwidth,
+        markerUnits,
+        markerWidth,
         mask,
-        maskcontentunits,
-        maskunits,
+        maskContentUnits,
+        maskUnits,
         max,
         media,
         method,
         min,
         mode,
-        numoctaves,
+        numOctaves,
         onclick,
         opacity,
         operator,
@@ -104,24 +104,24 @@ interface Attribute
         overlineThickness,
         paintOrder,
         path,
-        pathlength,
-        patterncontentunits,
-        patterntransform,
-        patternunits,
+        pathLength,
+        patternContentUnits,
+        patternTransform,
+        patternUnits,
         pointerEvents,
         points,
-        pointsatx,
-        pointsaty,
-        pointsatz,
-        preservealpha,
-        preserveaspectratio,
-        primitiveunits,
+        pointsAtX,
+        pointsAtY,
+        pointsAtZ,
+        preserveAlpha,
+        preserveAspectRatio,
+        primitiveUnits,
         r,
         radius,
-        refx,
-        refy,
-        repeatcount,
-        repeatdur,
+        refX,
+        refY,
+        repeatCount,
+        repeatDur,
         restart,
         result,
         rotate,
@@ -132,12 +132,12 @@ interface Attribute
         shapeRendering,
         side,
         spacing,
-        specularconstant,
-        specularexponent,
-        spreadmethod,
-        startoffset,
-        stddeviation,
-        stitchtiles,
+        specularConstant,
+        specularExponent,
+        spreadMethod,
+        startOffset,
+        stdDeviation,
+        stitchTiles,
         stopColor,
         stopOpacity,
         strikethroughPosition,
@@ -151,17 +151,17 @@ interface Attribute
         strokeOpacity,
         strokeWidth,
         style,
-        surfacescale,
-        systemlanguage,
+        surfaceScale,
+        systemLanguage,
         tabindex,
-        tablevalues,
+        tableValues,
         target,
-        targetx,
-        targety,
+        targetX,
+        targetY,
         textAnchor,
         textDecoration,
+        textLength,
         textRendering,
-        textlength,
         to,
         transform,
         transformOrigin,
@@ -171,7 +171,7 @@ interface Attribute
         unicodeBidi,
         values,
         vectorEffect,
-        viewbox,
+        viewBox,
         visibility,
         width,
         wordSpacing,
@@ -179,11 +179,11 @@ interface Attribute
         x,
         x1,
         x2,
-        xchannelselector,
+        xChannelSelector,
         y,
         y1,
         y2,
-        ychannelselector,
+        yChannelSelector,
         z,
     ]
     imports []
@@ -193,8 +193,8 @@ Attribute : [Attribute Str Str]
 ## Define a non-standard attribute.
 ## You can use this to add attributes that are not already supported.
 attribute : Str -> (Str -> Attribute)
-attribute = \attributeName ->
-    \attributeValue -> Attribute attributeName attributeValue
+attribute = \name ->
+    \value -> Attribute name value
 
 ## Construct an `accumulate` attribute.
 ##
@@ -223,8 +223,8 @@ amplitude = attribute "amplitude"
 ## Construct an `attributeName` attribute.
 ##
 ## See the [attributeName attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributename) for more information.
-attributename : Str -> Attribute
-attributename = attribute "attributeName"
+attributeName : Str -> Attribute
+attributeName = attribute "attributeName"
 
 ## Construct an `azimuth` attribute.
 ##
@@ -235,8 +235,8 @@ azimuth = attribute "azimuth"
 ## Construct a `baseFrequency` attribute.
 ##
 ## See the [baseFrequency attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/basefrequency) for more information.
-basefrequency : Str -> Attribute
-basefrequency = attribute "baseFrequency"
+baseFrequency : Str -> Attribute
+baseFrequency = attribute "baseFrequency"
 
 ## Construct a `baseline-shift` attribute.
 ##
@@ -265,8 +265,8 @@ by = attribute "by"
 ## Construct a `calcMode` attribute.
 ##
 ## See the [calcMode attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcmode) for more information.
-calcmode : Str -> Attribute
-calcmode = attribute "calcMode"
+calcMode : Str -> Attribute
+calcMode = attribute "calcMode"
 
 ## Construct a `class` attribute.
 ##
@@ -280,17 +280,17 @@ class = attribute "class"
 clipPath : Str -> Attribute
 clipPath = attribute "clip-path"
 
+## Construct a `clipPathUnits` attribute.
+##
+## See the [clipPathUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clippathunits) for more information.
+clipPathUnits : Str -> Attribute
+clipPathUnits = attribute "clipPathUnits"
+
 ## Construct a `clip-rule` attribute.
 ##
 ## See the [clip-rule attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip-rule) for more information.
 clipRule : Str -> Attribute
 clipRule = attribute "clip-rule"
-
-## Construct a `clipPathUnits` attribute.
-##
-## See the [clipPathUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clippathunits) for more information.
-clippathunits : Str -> Attribute
-clippathunits = attribute "clipPathUnits"
 
 ## Construct a `color` attribute.
 ##
@@ -337,8 +337,8 @@ d = attribute "d"
 ## Construct a `diffuseConstant` attribute.
 ##
 ## See the [diffuseConstant attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseconstant) for more information.
-diffuseconstant : Str -> Attribute
-diffuseconstant = attribute "diffuseConstant"
+diffuseConstant : Str -> Attribute
+diffuseConstant = attribute "diffuseConstant"
 
 ## Construct a `direction` attribute.
 ##
@@ -385,8 +385,8 @@ dy = attribute "dy"
 ## Construct an `edgeMode` attribute.
 ##
 ## See the [edgeMode attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/edgemode) for more information.
-edgemode : Str -> Attribute
-edgemode = attribute "edgeMode"
+edgeMode : Str -> Attribute
+edgeMode = attribute "edgeMode"
 
 ## Construct an `elevation` attribute.
 ##
@@ -433,8 +433,8 @@ filter = attribute "filter"
 ## Construct a `filterUnits` attribute.
 ##
 ## See the [filterUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterunits) for more information.
-filterunits : Str -> Attribute
-filterunits = attribute "filterUnits"
+filterUnits : Str -> Attribute
+filterUnits = attribute "filterUnits"
 
 ## Construct a `flood-color` attribute.
 ##
@@ -517,14 +517,14 @@ fy = attribute "fy"
 ## Construct a `gradientTransform` attribute.
 ##
 ## See the [gradientTransform attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradienttransform) for more information.
-gradienttransform : Str -> Attribute
-gradienttransform = attribute "gradientTransform"
+gradientTransform : Str -> Attribute
+gradientTransform = attribute "gradientTransform"
 
 ## Construct a `gradientUnits` attribute.
 ##
 ## See the [gradientUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradientunits) for more information.
-gradientunits : Str -> Attribute
-gradientunits = attribute "gradientUnits"
+gradientUnits : Str -> Attribute
+gradientUnits = attribute "gradientUnits"
 
 ## Construct a `height` attribute.
 ##
@@ -595,32 +595,32 @@ k4 = attribute "k4"
 ## Construct a `kernelMatrix` attribute.
 ##
 ## See the [kernelMatrix attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelmatrix) for more information.
-kernelmatrix : Str -> Attribute
-kernelmatrix = attribute "kernelMatrix"
+kernelMatrix : Str -> Attribute
+kernelMatrix = attribute "kernelMatrix"
 
 ## Construct a `kernelUnitLength` attribute.
 ##
 ## See the [kernelUnitLength attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelunitlength) for more information.
-kernelunitlength : Str -> Attribute
-kernelunitlength = attribute "kernelUnitLength"
+kernelUnitLength : Str -> Attribute
+kernelUnitLength = attribute "kernelUnitLength"
 
 ## Construct a `keyPoints` attribute.
 ##
 ## See the [keyPoints attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keypoints) for more information.
-keypoints : Str -> Attribute
-keypoints = attribute "keyPoints"
+keyPoints : Str -> Attribute
+keyPoints = attribute "keyPoints"
 
 ## Construct a `keySplines` attribute.
 ##
 ## See the [keySplines attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keysplines) for more information.
-keysplines : Str -> Attribute
-keysplines = attribute "keySplines"
+keySplines : Str -> Attribute
+keySplines = attribute "keySplines"
 
 ## Construct a `keyTimes` attribute.
 ##
 ## See the [keyTimes attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keytimes) for more information.
-keytimes : Str -> Attribute
-keytimes = attribute "keyTimes"
+keyTimes : Str -> Attribute
+keyTimes = attribute "keyTimes"
 
 ## Construct a `lang` attribute.
 ##
@@ -631,8 +631,8 @@ lang = attribute "lang"
 ## Construct a `lengthAdjust` attribute.
 ##
 ## See the [lengthAdjust attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthadjust) for more information.
-lengthadjust : Str -> Attribute
-lengthadjust = attribute "lengthAdjust"
+lengthAdjust : Str -> Attribute
+lengthAdjust = attribute "lengthAdjust"
 
 ## Construct a `letter-spacing` attribute.
 ##
@@ -649,14 +649,20 @@ lightingColor = attribute "lighting-color"
 ## Construct a `limitingConeAngle` attribute.
 ##
 ## See the [limitingConeAngle attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/limitingconeangle) for more information.
-limitingconeangle : Str -> Attribute
-limitingconeangle = attribute "limitingConeAngle"
+limitingConeAngle : Str -> Attribute
+limitingConeAngle = attribute "limitingConeAngle"
 
 ## Construct a `marker-end` attribute.
 ##
 ## See the [marker-end attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/marker-end) for more information.
 markerEnd : Str -> Attribute
 markerEnd = attribute "marker-end"
+
+## Construct a `markerHeight` attribute.
+##
+## See the [markerHeight attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerheight) for more information.
+markerHeight : Str -> Attribute
+markerHeight = attribute "markerHeight"
 
 ## Construct a `marker-mid` attribute.
 ##
@@ -670,23 +676,17 @@ markerMid = attribute "marker-mid"
 markerStart : Str -> Attribute
 markerStart = attribute "marker-start"
 
-## Construct a `markerHeight` attribute.
-##
-## See the [markerHeight attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerheight) for more information.
-markerheight : Str -> Attribute
-markerheight = attribute "markerHeight"
-
 ## Construct a `markerUnits` attribute.
 ##
 ## See the [markerUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerunits) for more information.
-markerunits : Str -> Attribute
-markerunits = attribute "markerUnits"
+markerUnits : Str -> Attribute
+markerUnits = attribute "markerUnits"
 
 ## Construct a `markerWidth` attribute.
 ##
 ## See the [markerWidth attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerwidth) for more information.
-markerwidth : Str -> Attribute
-markerwidth = attribute "markerWidth"
+markerWidth : Str -> Attribute
+markerWidth = attribute "markerWidth"
 
 ## Construct a `mask` attribute.
 ##
@@ -697,14 +697,14 @@ mask = attribute "mask"
 ## Construct a `maskContentUnits` attribute.
 ##
 ## See the [maskContentUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/maskcontentunits) for more information.
-maskcontentunits : Str -> Attribute
-maskcontentunits = attribute "maskContentUnits"
+maskContentUnits : Str -> Attribute
+maskContentUnits = attribute "maskContentUnits"
 
 ## Construct a `maskUnits` attribute.
 ##
 ## See the [maskUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/maskunits) for more information.
-maskunits : Str -> Attribute
-maskunits = attribute "maskUnits"
+maskUnits : Str -> Attribute
+maskUnits = attribute "maskUnits"
 
 ## Construct a `max` attribute.
 ##
@@ -739,8 +739,8 @@ mode = attribute "mode"
 ## Construct a `numOctaves` attribute.
 ##
 ## See the [numOctaves attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numoctaves) for more information.
-numoctaves : Str -> Attribute
-numoctaves = attribute "numOctaves"
+numOctaves : Str -> Attribute
+numOctaves = attribute "numOctaves"
 
 ## Construct an `onclick` attribute.
 ##
@@ -811,26 +811,26 @@ path = attribute "path"
 ## Construct a `pathLength` attribute.
 ##
 ## See the [pathLength attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pathlength) for more information.
-pathlength : Str -> Attribute
-pathlength = attribute "pathLength"
+pathLength : Str -> Attribute
+pathLength = attribute "pathLength"
 
 ## Construct a `patternContentUnits` attribute.
 ##
 ## See the [patternContentUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patterncontentunits) for more information.
-patterncontentunits : Str -> Attribute
-patterncontentunits = attribute "patternContentUnits"
+patternContentUnits : Str -> Attribute
+patternContentUnits = attribute "patternContentUnits"
 
 ## Construct a `patternTransform` attribute.
 ##
 ## See the [patternTransform attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patterntransform) for more information.
-patterntransform : Str -> Attribute
-patterntransform = attribute "patternTransform"
+patternTransform : Str -> Attribute
+patternTransform = attribute "patternTransform"
 
 ## Construct a `patternUnits` attribute.
 ##
 ## See the [patternUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternunits) for more information.
-patternunits : Str -> Attribute
-patternunits = attribute "patternUnits"
+patternUnits : Str -> Attribute
+patternUnits = attribute "patternUnits"
 
 ## Construct a `pointer-events` attribute.
 ##
@@ -847,38 +847,38 @@ points = attribute "points"
 ## Construct a `pointsAtX` attribute.
 ##
 ## See the [pointsAtX attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsatx) for more information.
-pointsatx : Str -> Attribute
-pointsatx = attribute "pointsAtX"
+pointsAtX : Str -> Attribute
+pointsAtX = attribute "pointsAtX"
 
 ## Construct a `pointsAtY` attribute.
 ##
 ## See the [pointsAtY attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsaty) for more information.
-pointsaty : Str -> Attribute
-pointsaty = attribute "pointsAtY"
+pointsAtY : Str -> Attribute
+pointsAtY = attribute "pointsAtY"
 
 ## Construct a `pointsAtZ` attribute.
 ##
 ## See the [pointsAtZ attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsatz) for more information.
-pointsatz : Str -> Attribute
-pointsatz = attribute "pointsAtZ"
+pointsAtZ : Str -> Attribute
+pointsAtZ = attribute "pointsAtZ"
 
 ## Construct a `preserveAlpha` attribute.
 ##
 ## See the [preserveAlpha attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preservealpha) for more information.
-preservealpha : Str -> Attribute
-preservealpha = attribute "preserveAlpha"
+preserveAlpha : Str -> Attribute
+preserveAlpha = attribute "preserveAlpha"
 
 ## Construct a `preserveAspectRatio` attribute.
 ##
 ## See the [preserveAspectRatio attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveaspectratio) for more information.
-preserveaspectratio : Str -> Attribute
-preserveaspectratio = attribute "preserveAspectRatio"
+preserveAspectRatio : Str -> Attribute
+preserveAspectRatio = attribute "preserveAspectRatio"
 
 ## Construct a `primitiveUnits` attribute.
 ##
 ## See the [primitiveUnits attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveunits) for more information.
-primitiveunits : Str -> Attribute
-primitiveunits = attribute "primitiveUnits"
+primitiveUnits : Str -> Attribute
+primitiveUnits = attribute "primitiveUnits"
 
 ## Construct a `r` attribute.
 ##
@@ -895,26 +895,26 @@ radius = attribute "radius"
 ## Construct a `refX` attribute.
 ##
 ## See the [refX attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/refx) for more information.
-refx : Str -> Attribute
-refx = attribute "refX"
+refX : Str -> Attribute
+refX = attribute "refX"
 
 ## Construct a `refY` attribute.
 ##
 ## See the [refY attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/refy) for more information.
-refy : Str -> Attribute
-refy = attribute "refY"
+refY : Str -> Attribute
+refY = attribute "refY"
 
 ## Construct a `repeatCount` attribute.
 ##
 ## See the [repeatCount attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatcount) for more information.
-repeatcount : Str -> Attribute
-repeatcount = attribute "repeatCount"
+repeatCount : Str -> Attribute
+repeatCount = attribute "repeatCount"
 
 ## Construct a `repeatDur` attribute.
 ##
 ## See the [repeatDur attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatdur) for more information.
-repeatdur : Str -> Attribute
-repeatdur = attribute "repeatDur"
+repeatDur : Str -> Attribute
+repeatDur = attribute "repeatDur"
 
 ## Construct a `restart` attribute.
 ##
@@ -979,38 +979,38 @@ spacing = attribute "spacing"
 ## Construct a `specularConstant` attribute.
 ##
 ## See the [specularConstant attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularconstant) for more information.
-specularconstant : Str -> Attribute
-specularconstant = attribute "specularConstant"
+specularConstant : Str -> Attribute
+specularConstant = attribute "specularConstant"
 
 ## Construct a `specularExponent` attribute.
 ##
 ## See the [specularExponent attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularexponent) for more information.
-specularexponent : Str -> Attribute
-specularexponent = attribute "specularExponent"
+specularExponent : Str -> Attribute
+specularExponent = attribute "specularExponent"
 
 ## Construct a `spreadMethod` attribute.
 ##
 ## See the [spreadMethod attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/spreadmethod) for more information.
-spreadmethod : Str -> Attribute
-spreadmethod = attribute "spreadMethod"
+spreadMethod : Str -> Attribute
+spreadMethod = attribute "spreadMethod"
 
 ## Construct a `startOffset` attribute.
 ##
 ## See the [startOffset attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/startoffset) for more information.
-startoffset : Str -> Attribute
-startoffset = attribute "startOffset"
+startOffset : Str -> Attribute
+startOffset = attribute "startOffset"
 
 ## Construct a `stdDeviation` attribute.
 ##
 ## See the [stdDeviation attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stddeviation) for more information.
-stddeviation : Str -> Attribute
-stddeviation = attribute "stdDeviation"
+stdDeviation : Str -> Attribute
+stdDeviation = attribute "stdDeviation"
 
 ## Construct a `stitchTiles` attribute.
 ##
 ## See the [stitchTiles attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stitchtiles) for more information.
-stitchtiles : Str -> Attribute
-stitchtiles = attribute "stitchTiles"
+stitchTiles : Str -> Attribute
+stitchTiles = attribute "stitchTiles"
 
 ## Construct a `stop-color` attribute.
 ##
@@ -1093,14 +1093,14 @@ style = attribute "style"
 ## Construct a `surfaceScale` attribute.
 ##
 ## See the [surfaceScale attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfacescale) for more information.
-surfacescale : Str -> Attribute
-surfacescale = attribute "surfaceScale"
+surfaceScale : Str -> Attribute
+surfaceScale = attribute "surfaceScale"
 
 ## Construct a `systemLanguage` attribute.
 ##
 ## See the [systemLanguage attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/systemlanguage) for more information.
-systemlanguage : Str -> Attribute
-systemlanguage = attribute "systemLanguage"
+systemLanguage : Str -> Attribute
+systemLanguage = attribute "systemLanguage"
 
 ## Construct a `tabindex` attribute.
 ##
@@ -1111,8 +1111,8 @@ tabindex = attribute "tabindex"
 ## Construct a `tableValues` attribute.
 ##
 ## See the [tableValues attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tablevalues) for more information.
-tablevalues : Str -> Attribute
-tablevalues = attribute "tableValues"
+tableValues : Str -> Attribute
+tableValues = attribute "tableValues"
 
 ## Construct a `target` attribute.
 ##
@@ -1123,14 +1123,14 @@ target = attribute "target"
 ## Construct a `targetX` attribute.
 ##
 ## See the [targetX attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetx) for more information.
-targetx : Str -> Attribute
-targetx = attribute "targetX"
+targetX : Str -> Attribute
+targetX = attribute "targetX"
 
 ## Construct a `targetY` attribute.
 ##
 ## See the [targetY attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targety) for more information.
-targety : Str -> Attribute
-targety = attribute "targetY"
+targetY : Str -> Attribute
+targetY = attribute "targetY"
 
 ## Construct a `text-anchor` attribute.
 ##
@@ -1144,17 +1144,17 @@ textAnchor = attribute "text-anchor"
 textDecoration : Str -> Attribute
 textDecoration = attribute "text-decoration"
 
+## Construct a `textLength` attribute.
+##
+## See the [textLength attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textlength) for more information.
+textLength : Str -> Attribute
+textLength = attribute "textLength"
+
 ## Construct a `text-rendering` attribute.
 ##
 ## See the [text-rendering attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-rendering) for more information.
 textRendering : Str -> Attribute
 textRendering = attribute "text-rendering"
-
-## Construct a `textLength` attribute.
-##
-## See the [textLength attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textlength) for more information.
-textlength : Str -> Attribute
-textlength = attribute "textLength"
 
 ## Construct a `to` attribute.
 ##
@@ -1213,8 +1213,8 @@ vectorEffect = attribute "vector-effect"
 ## Construct a `viewBox` attribute.
 ##
 ## See the [viewBox attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewbox) for more information.
-viewbox : Str -> Attribute
-viewbox = attribute "viewBox"
+viewBox : Str -> Attribute
+viewBox = attribute "viewBox"
 
 ## Construct a `visibility` attribute.
 ##
@@ -1261,8 +1261,8 @@ x2 = attribute "x2"
 ## Construct a `xChannelSelector` attribute.
 ##
 ## See the [xChannelSelector attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xchannelselector) for more information.
-xchannelselector : Str -> Attribute
-xchannelselector = attribute "xChannelSelector"
+xChannelSelector : Str -> Attribute
+xChannelSelector = attribute "xChannelSelector"
 
 ## Construct a `y` attribute.
 ##
@@ -1285,8 +1285,8 @@ y2 = attribute "y2"
 ## Construct a `yChannelSelector` attribute.
 ##
 ## See the [yChannelSelector attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ychannelselector) for more information.
-ychannelselector : Str -> Attribute
-ychannelselector = attribute "yChannelSelector"
+yChannelSelector : Str -> Attribute
+yChannelSelector = attribute "yChannelSelector"
 
 ## Construct a `z` attribute.
 ##

@@ -2,48 +2,46 @@ interface Attribute
     exposes [
         Attribute,
         attribute,
-        # Generic attributes - Core attributes
-        id,
-        lang,
-        tabindex,
-        xmlBase,
-        xmlLang,
-        xmlSpace,
-        # Generic attributes - Style attributes
-        class,
-        style,
-        # Generic attributes - Conditional processing attributes
-        requiredextensions,
-        requiredfeatures,
-        systemlanguage,
-        # Generic attributes - XLink attributes
-        xlinkHref,
-        xlinkType,
-        xlinkRole,
-        xlinkArcrole,
-        xlinkTitle,
-        xlinkShow,
-        xlinkActuate,
-        # Generic attributes - Presentation attributes
+        accumulate,
+        additive,
         alignmentBaseline,
+        amplitude,
+        attributename,
+        azimuth,
+        basefrequency,
         baselineShift,
-        clip,
+        begin,
+        bias,
+        by,
+        calcmode,
+        class,
         clipPath,
         clipRule,
+        clippathunits,
         color,
         colorInterpolation,
         colorInterpolationFilters,
-        colorProfile,
-        colorRendering,
         cursor,
+        cx,
+        cy,
+        d,
+        diffuseconstant,
         direction,
         display,
+        divisor,
         dominantBaseline,
-        enableBackground,
+        dur,
+        dx,
+        dy,
+        edgemode,
+        elevation,
+        end,
+        exponent,
         fill,
         fillOpacity,
         fillRule,
         filter,
+        filterunits,
         floodColor,
         floodOpacity,
         fontFamily,
@@ -53,22 +51,97 @@ interface Attribute
         fontStyle,
         fontVariant,
         fontWeight,
-        glyphOrientationHorizontal,
-        glyphOrientationVertical,
+        fr,
+        from,
+        fx,
+        fy,
+        gradienttransform,
+        gradientunits,
+        height,
+        href,
+        id,
         imageRendering,
-        kerning,
+        in,
+        in2,
+        intercept,
+        k1,
+        k2,
+        k3,
+        k4,
+        kernelmatrix,
+        kernelunitlength,
+        keypoints,
+        keysplines,
+        keytimes,
+        lang,
+        lengthadjust,
         letterSpacing,
         lightingColor,
+        limitingconeangle,
         markerEnd,
         markerMid,
         markerStart,
+        markerheight,
+        markerunits,
+        markerwidth,
         mask,
+        maskcontentunits,
+        maskunits,
+        max,
+        media,
+        method,
+        min,
+        mode,
+        numoctaves,
+        onclick,
         opacity,
+        operator,
+        order,
+        orient,
+        origin,
         overflow,
+        overlinePosition,
+        overlineThickness,
+        paintOrder,
+        path,
+        pathlength,
+        patterncontentunits,
+        patterntransform,
+        patternunits,
         pointerEvents,
+        points,
+        pointsatx,
+        pointsaty,
+        pointsatz,
+        preservealpha,
+        preserveaspectratio,
+        primitiveunits,
+        r,
+        radius,
+        refx,
+        refy,
+        repeatcount,
+        repeatdur,
+        restart,
+        result,
+        rotate,
+        rx,
+        ry,
+        scale,
+        seed,
         shapeRendering,
+        side,
+        spacing,
+        specularconstant,
+        specularexponent,
+        spreadmethod,
+        startoffset,
+        stddeviation,
+        stitchtiles,
         stopColor,
         stopOpacity,
+        strikethroughPosition,
+        strikethroughThickness,
         stroke,
         strokeDasharray,
         strokeDashoffset,
@@ -77,127 +150,41 @@ interface Attribute
         strokeMiterlimit,
         strokeOpacity,
         strokeWidth,
+        style,
+        surfacescale,
+        systemlanguage,
+        tabindex,
+        tablevalues,
+        target,
+        targetx,
+        targety,
         textAnchor,
         textDecoration,
         textRendering,
+        textlength,
+        to,
         transform,
         transformOrigin,
+        type,
+        underlinePosition,
+        underlineThickness,
         unicodeBidi,
+        values,
         vectorEffect,
+        viewbox,
         visibility,
+        width,
         wordSpacing,
         writingMode,
-        # Filters attributes - Filter primitive attributes
-        height,
-        result,
-        width,
         x,
+        x1,
+        x2,
+        xchannelselector,
         y,
-        # Filters attributes - Transfer function attributes
-        type,
-        tablevalues,
-        slope,
-        intercept,
-        amplitude,
-        exponent,
-        offset,
-        # Animation attributes - Animation target element attributes
-        href,
-        # Animation attributes - Animation attribute target attributes
-        attributetype,
-        attributename,
-        # Animation attributes - Animation timing attributes
-        begin,
-        dur,
-        end,
-        min,
-        max,
-        restart,
-        repeatcount,
-        repeatdur,
-        # Animation attributes - Animation value attributes
-        calcmode,
-        values,
-        keytimes,
-        keysplines,
-        from,
-        to,
-        by,
-        autoreverse,
-        accelerate,
-        decelerate,
-        # Animation attributes - Animation addition attributes
-        additive,
-        accumulate,
-        # Event attributes - Animation event attributes
-        onbegin,
-        onend,
-        onrepeat,
-        # Event attributes - Document event attributes
-        onabort,
-        onerror,
-        onresize,
-        onscroll,
-        onunload,
-        # Event attributes - Global event attributes
-        oncancel,
-        oncanplay,
-        oncanplaythrough,
-        onchange,
-        onclick,
-        onclose,
-        oncuechange,
-        ondblclick,
-        ondrag,
-        ondragend,
-        ondragenter,
-        ondragleave,
-        ondragover,
-        ondragstart,
-        ondrop,
-        ondurationchange,
-        onemptied,
-        onended,
-        onfocus,
-        oninput,
-        oninvalid,
-        onkeydown,
-        onkeypress,
-        onkeyup,
-        onload,
-        onloadeddata,
-        onloadedmetadata,
-        onloadstart,
-        onmousedown,
-        onmouseenter,
-        onmouseleave,
-        onmousemove,
-        onmouseout,
-        onmouseover,
-        onmouseup,
-        onmousewheel,
-        onpause,
-        onplay,
-        onplaying,
-        onprogress,
-        onratechange,
-        onreset,
-        onseeked,
-        onseeking,
-        onselect,
-        onshow,
-        onstalled,
-        onsubmit,
-        onsuspend,
-        ontimeupdate,
-        ontoggle,
-        onvolumechange,
-        onwaiting,
-        # Event attributes - Graphical event attributes
-        onactivate,
-        onfocusin,
-        onfocusout,
-
+        y1,
+        y2,
+        ychannelselector,
+        z,
     ]
     imports []
 
@@ -209,123 +196,17 @@ attribute : Str -> (Str -> Attribute)
 attribute = \attributeName ->
     \attributeValue -> Attribute attributeName attributeValue
 
-# Generic attributes - Core attributes
-
-## Construct a `id` attribute.
+## Construct a `accumulate` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/id) for more information.
-id : Str -> Attribute
-id = attribute "id"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/accumulate) for more information.
+accumulate : Str -> Attribute
+accumulate = attribute "accumulate"
 
-## Construct a `lang` attribute.
+## Construct a `additive` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lang) for more information.
-lang : Str -> Attribute
-lang = attribute "lang"
-
-## Construct a `tabindex` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tabindex) for more information.
-tabindex : Str -> Attribute
-tabindex = attribute "tabindex"
-
-## Construct a `xml:base` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:base) for more information.
-xmlBase : Str -> Attribute
-xmlBase = attribute "xml:base"
-
-## Construct a `xml:lang` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:lang) for more information.
-xmlLang : Str -> Attribute
-xmlLang = attribute "xml:lang"
-
-## Construct a `xml:space` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:space) for more information.
-xmlSpace : Str -> Attribute
-xmlSpace = attribute "xml:space"
-
-# Generic attributes - Style attributes
-
-## Construct a `class` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/class) for more information.
-class : Str -> Attribute
-class = attribute "class"
-
-## Construct a `style` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/style) for more information.
-style : Str -> Attribute
-style = attribute "style"
-
-# Generic attributes - Conditional processing attributes
-
-## Construct a `requiredExtensions` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/requiredExtensions) for more information.
-requiredextensions : Str -> Attribute
-requiredextensions = attribute "requiredExtensions"
-
-## Construct a `requiredFeatures` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/requiredFeatures) for more information.
-requiredfeatures : Str -> Attribute
-requiredfeatures = attribute "requiredFeatures"
-
-## Construct a `systemLanguage` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/systemLanguage) for more information.
-systemlanguage : Str -> Attribute
-systemlanguage = attribute "systemLanguage"
-
-# Generic attributes - XLink attributes
-
-## Construct a `xlink:href` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:href) for more information.
-xlinkHref : Str -> Attribute
-xlinkHref = attribute "xlink:href"
-
-## Construct a `xlink:type` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:type) for more information.
-xlinkType : Str -> Attribute
-xlinkType = attribute "xlink:type"
-
-## Construct a `xlink:role` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:role) for more information.
-xlinkRole : Str -> Attribute
-xlinkRole = attribute "xlink:role"
-
-## Construct a `xlink:arcrole` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:arcrole) for more information.
-xlinkArcrole : Str -> Attribute
-xlinkArcrole = attribute "xlink:arcrole"
-
-## Construct a `xlink:title` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:title) for more information.
-xlinkTitle : Str -> Attribute
-xlinkTitle = attribute "xlink:title"
-
-## Construct a `xlink:show` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:show) for more information.
-xlinkShow : Str -> Attribute
-xlinkShow = attribute "xlink:show"
-
-## Construct a `xlink:actuate` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xlink:actuate) for more information.
-xlinkActuate : Str -> Attribute
-xlinkActuate = attribute "xlink:actuate"
-
-# Generic attributes - Presentation attributes
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/additive) for more information.
+additive : Str -> Attribute
+additive = attribute "additive"
 
 ## Construct a `alignment-baseline` attribute.
 ##
@@ -333,17 +214,65 @@ xlinkActuate = attribute "xlink:actuate"
 alignmentBaseline : Str -> Attribute
 alignmentBaseline = attribute "alignment-baseline"
 
+## Construct a `amplitude` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/amplitude) for more information.
+amplitude : Str -> Attribute
+amplitude = attribute "amplitude"
+
+## Construct a `attributeName` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributename) for more information.
+attributename : Str -> Attribute
+attributename = attribute "attributeName"
+
+## Construct a `azimuth` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/azimuth) for more information.
+azimuth : Str -> Attribute
+azimuth = attribute "azimuth"
+
+## Construct a `baseFrequency` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/basefrequency) for more information.
+basefrequency : Str -> Attribute
+basefrequency = attribute "baseFrequency"
+
 ## Construct a `baseline-shift` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseline-shift) for more information.
 baselineShift : Str -> Attribute
 baselineShift = attribute "baseline-shift"
 
-## Construct a `clip` attribute.
+## Construct a `begin` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip) for more information.
-clip : Str -> Attribute
-clip = attribute "clip"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin) for more information.
+begin : Str -> Attribute
+begin = attribute "begin"
+
+## Construct a `bias` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/bias) for more information.
+bias : Str -> Attribute
+bias = attribute "bias"
+
+## Construct a `by` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/by) for more information.
+by : Str -> Attribute
+by = attribute "by"
+
+## Construct a `calcMode` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcmode) for more information.
+calcmode : Str -> Attribute
+calcmode = attribute "calcMode"
+
+## Construct a `class` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/class) for more information.
+class : Str -> Attribute
+class = attribute "class"
 
 ## Construct a `clip-path` attribute.
 ##
@@ -356,6 +285,12 @@ clipPath = attribute "clip-path"
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clip-rule) for more information.
 clipRule : Str -> Attribute
 clipRule = attribute "clip-rule"
+
+## Construct a `clipPathUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/clippathunits) for more information.
+clippathunits : Str -> Attribute
+clippathunits = attribute "clipPathUnits"
 
 ## Construct a `color` attribute.
 ##
@@ -375,23 +310,35 @@ colorInterpolation = attribute "color-interpolation"
 colorInterpolationFilters : Str -> Attribute
 colorInterpolationFilters = attribute "color-interpolation-filters"
 
-## Construct a `color-profile` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-profile) for more information.
-colorProfile : Str -> Attribute
-colorProfile = attribute "color-profile"
-
-## Construct a `color-rendering` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-rendering) for more information.
-colorRendering : Str -> Attribute
-colorRendering = attribute "color-rendering"
-
 ## Construct a `cursor` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cursor) for more information.
 cursor : Str -> Attribute
 cursor = attribute "cursor"
+
+## Construct a `cx` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cx) for more information.
+cx : Str -> Attribute
+cx = attribute "cx"
+
+## Construct a `cy` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cy) for more information.
+cy : Str -> Attribute
+cy = attribute "cy"
+
+## Construct a `d` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) for more information.
+d : Str -> Attribute
+d = attribute "d"
+
+## Construct a `diffuseConstant` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseconstant) for more information.
+diffuseconstant : Str -> Attribute
+diffuseconstant = attribute "diffuseConstant"
 
 ## Construct a `direction` attribute.
 ##
@@ -405,17 +352,59 @@ direction = attribute "direction"
 display : Str -> Attribute
 display = attribute "display"
 
+## Construct a `divisor` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/divisor) for more information.
+divisor : Str -> Attribute
+divisor = attribute "divisor"
+
 ## Construct a `dominant-baseline` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dominant-baseline) for more information.
 dominantBaseline : Str -> Attribute
 dominantBaseline = attribute "dominant-baseline"
 
-## Construct a `enable-background` attribute.
+## Construct a `dur` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/enable-background) for more information.
-enableBackground : Str -> Attribute
-enableBackground = attribute "enable-background"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dur) for more information.
+dur : Str -> Attribute
+dur = attribute "dur"
+
+## Construct a `dx` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dx) for more information.
+dx : Str -> Attribute
+dx = attribute "dx"
+
+## Construct a `dy` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dy) for more information.
+dy : Str -> Attribute
+dy = attribute "dy"
+
+## Construct a `edgeMode` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/edgemode) for more information.
+edgemode : Str -> Attribute
+edgemode = attribute "edgeMode"
+
+## Construct a `elevation` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/elevation) for more information.
+elevation : Str -> Attribute
+elevation = attribute "elevation"
+
+## Construct a `end` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end) for more information.
+end : Str -> Attribute
+end = attribute "end"
+
+## Construct a `exponent` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/exponent) for more information.
+exponent : Str -> Attribute
+exponent = attribute "exponent"
 
 ## Construct a `fill` attribute.
 ##
@@ -440,6 +429,12 @@ fillRule = attribute "fill-rule"
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filter) for more information.
 filter : Str -> Attribute
 filter = attribute "filter"
+
+## Construct a `filterUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterunits) for more information.
+filterunits : Str -> Attribute
+filterunits = attribute "filterUnits"
 
 ## Construct a `flood-color` attribute.
 ##
@@ -495,17 +490,59 @@ fontVariant = attribute "font-variant"
 fontWeight : Str -> Attribute
 fontWeight = attribute "font-weight"
 
-## Construct a `glyph-orientation-horizontal` attribute.
+## Construct a `fr` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/glyph-orientation-horizontal) for more information.
-glyphOrientationHorizontal : Str -> Attribute
-glyphOrientationHorizontal = attribute "glyph-orientation-horizontal"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fr) for more information.
+fr : Str -> Attribute
+fr = attribute "fr"
 
-## Construct a `glyph-orientation-vertical` attribute.
+## Construct a `from` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/glyph-orientation-vertical) for more information.
-glyphOrientationVertical : Str -> Attribute
-glyphOrientationVertical = attribute "glyph-orientation-vertical"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/from) for more information.
+from : Str -> Attribute
+from = attribute "from"
+
+## Construct a `fx` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fx) for more information.
+fx : Str -> Attribute
+fx = attribute "fx"
+
+## Construct a `fy` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fy) for more information.
+fy : Str -> Attribute
+fy = attribute "fy"
+
+## Construct a `gradientTransform` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradienttransform) for more information.
+gradienttransform : Str -> Attribute
+gradienttransform = attribute "gradientTransform"
+
+## Construct a `gradientUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradientunits) for more information.
+gradientunits : Str -> Attribute
+gradientunits = attribute "gradientUnits"
+
+## Construct a `height` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height) for more information.
+height : Str -> Attribute
+height = attribute "height"
+
+## Construct a `href` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href) for more information.
+href : Str -> Attribute
+href = attribute "href"
+
+## Construct a `id` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/id) for more information.
+id : Str -> Attribute
+id = attribute "id"
 
 ## Construct a `image-rendering` attribute.
 ##
@@ -513,11 +550,89 @@ glyphOrientationVertical = attribute "glyph-orientation-vertical"
 imageRendering : Str -> Attribute
 imageRendering = attribute "image-rendering"
 
-## Construct a `kerning` attribute.
+## Construct a `in` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kerning) for more information.
-kerning : Str -> Attribute
-kerning = attribute "kerning"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in) for more information.
+in : Str -> Attribute
+in = attribute "in"
+
+## Construct a `in2` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in2) for more information.
+in2 : Str -> Attribute
+in2 = attribute "in2"
+
+## Construct a `intercept` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/intercept) for more information.
+intercept : Str -> Attribute
+intercept = attribute "intercept"
+
+## Construct a `k1` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k1) for more information.
+k1 : Str -> Attribute
+k1 = attribute "k1"
+
+## Construct a `k2` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k2) for more information.
+k2 : Str -> Attribute
+k2 = attribute "k2"
+
+## Construct a `k3` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k3) for more information.
+k3 : Str -> Attribute
+k3 = attribute "k3"
+
+## Construct a `k4` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/k4) for more information.
+k4 : Str -> Attribute
+k4 = attribute "k4"
+
+## Construct a `kernelMatrix` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelmatrix) for more information.
+kernelmatrix : Str -> Attribute
+kernelmatrix = attribute "kernelMatrix"
+
+## Construct a `kernelUnitLength` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelunitlength) for more information.
+kernelunitlength : Str -> Attribute
+kernelunitlength = attribute "kernelUnitLength"
+
+## Construct a `keyPoints` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keypoints) for more information.
+keypoints : Str -> Attribute
+keypoints = attribute "keyPoints"
+
+## Construct a `keySplines` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keysplines) for more information.
+keysplines : Str -> Attribute
+keysplines = attribute "keySplines"
+
+## Construct a `keyTimes` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keytimes) for more information.
+keytimes : Str -> Attribute
+keytimes = attribute "keyTimes"
+
+## Construct a `lang` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lang) for more information.
+lang : Str -> Attribute
+lang = attribute "lang"
+
+## Construct a `lengthAdjust` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lengthadjust) for more information.
+lengthadjust : Str -> Attribute
+lengthadjust = attribute "lengthAdjust"
 
 ## Construct a `letter-spacing` attribute.
 ##
@@ -530,6 +645,12 @@ letterSpacing = attribute "letter-spacing"
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color) for more information.
 lightingColor : Str -> Attribute
 lightingColor = attribute "lighting-color"
+
+## Construct a `limitingConeAngle` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/limitingconeangle) for more information.
+limitingconeangle : Str -> Attribute
+limitingconeangle = attribute "limitingConeAngle"
 
 ## Construct a `marker-end` attribute.
 ##
@@ -549,11 +670,83 @@ markerMid = attribute "marker-mid"
 markerStart : Str -> Attribute
 markerStart = attribute "marker-start"
 
+## Construct a `markerHeight` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerheight) for more information.
+markerheight : Str -> Attribute
+markerheight = attribute "markerHeight"
+
+## Construct a `markerUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerunits) for more information.
+markerunits : Str -> Attribute
+markerunits = attribute "markerUnits"
+
+## Construct a `markerWidth` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/markerwidth) for more information.
+markerwidth : Str -> Attribute
+markerwidth = attribute "markerWidth"
+
 ## Construct a `mask` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mask) for more information.
 mask : Str -> Attribute
 mask = attribute "mask"
+
+## Construct a `maskContentUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/maskcontentunits) for more information.
+maskcontentunits : Str -> Attribute
+maskcontentunits = attribute "maskContentUnits"
+
+## Construct a `maskUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/maskunits) for more information.
+maskunits : Str -> Attribute
+maskunits = attribute "maskUnits"
+
+## Construct a `max` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/max) for more information.
+max : Str -> Attribute
+max = attribute "max"
+
+## Construct a `media` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/media) for more information.
+media : Str -> Attribute
+media = attribute "media"
+
+## Construct a `method` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/method) for more information.
+method : Str -> Attribute
+method = attribute "method"
+
+## Construct a `min` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/min) for more information.
+min : Str -> Attribute
+min = attribute "min"
+
+## Construct a `mode` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/mode) for more information.
+mode : Str -> Attribute
+mode = attribute "mode"
+
+## Construct a `numOctaves` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numoctaves) for more information.
+numoctaves : Str -> Attribute
+numoctaves = attribute "numOctaves"
+
+## Construct a `onclick` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onclick) for more information.
+onclick : Str -> Attribute
+onclick = attribute "onclick"
 
 ## Construct a `opacity` attribute.
 ##
@@ -561,11 +754,83 @@ mask = attribute "mask"
 opacity : Str -> Attribute
 opacity = attribute "opacity"
 
+## Construct a `operator` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/operator) for more information.
+operator : Str -> Attribute
+operator = attribute "operator"
+
+## Construct a `order` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/order) for more information.
+order : Str -> Attribute
+order = attribute "order"
+
+## Construct a `orient` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/orient) for more information.
+orient : Str -> Attribute
+orient = attribute "orient"
+
+## Construct a `origin` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/origin) for more information.
+origin : Str -> Attribute
+origin = attribute "origin"
+
 ## Construct a `overflow` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overflow) for more information.
 overflow : Str -> Attribute
 overflow = attribute "overflow"
+
+## Construct a `overline-position` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overline-position) for more information.
+overlinePosition : Str -> Attribute
+overlinePosition = attribute "overline-position"
+
+## Construct a `overline-thickness` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overline-thickness) for more information.
+overlineThickness : Str -> Attribute
+overlineThickness = attribute "overline-thickness"
+
+## Construct a `paint-order` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/paint-order) for more information.
+paintOrder : Str -> Attribute
+paintOrder = attribute "paint-order"
+
+## Construct a `path` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/path) for more information.
+path : Str -> Attribute
+path = attribute "path"
+
+## Construct a `pathLength` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pathlength) for more information.
+pathlength : Str -> Attribute
+pathlength = attribute "pathLength"
+
+## Construct a `patternContentUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patterncontentunits) for more information.
+patterncontentunits : Str -> Attribute
+patterncontentunits = attribute "patternContentUnits"
+
+## Construct a `patternTransform` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patterntransform) for more information.
+patterntransform : Str -> Attribute
+patterntransform = attribute "patternTransform"
+
+## Construct a `patternUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/patternunits) for more information.
+patternunits : Str -> Attribute
+patternunits = attribute "patternUnits"
 
 ## Construct a `pointer-events` attribute.
 ##
@@ -573,11 +838,179 @@ overflow = attribute "overflow"
 pointerEvents : Str -> Attribute
 pointerEvents = attribute "pointer-events"
 
+## Construct a `points` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/points) for more information.
+points : Str -> Attribute
+points = attribute "points"
+
+## Construct a `pointsAtX` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsatx) for more information.
+pointsatx : Str -> Attribute
+pointsatx = attribute "pointsAtX"
+
+## Construct a `pointsAtY` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsaty) for more information.
+pointsaty : Str -> Attribute
+pointsaty = attribute "pointsAtY"
+
+## Construct a `pointsAtZ` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pointsatz) for more information.
+pointsatz : Str -> Attribute
+pointsatz = attribute "pointsAtZ"
+
+## Construct a `preserveAlpha` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preservealpha) for more information.
+preservealpha : Str -> Attribute
+preservealpha = attribute "preserveAlpha"
+
+## Construct a `preserveAspectRatio` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveaspectratio) for more information.
+preserveaspectratio : Str -> Attribute
+preserveaspectratio = attribute "preserveAspectRatio"
+
+## Construct a `primitiveUnits` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveunits) for more information.
+primitiveunits : Str -> Attribute
+primitiveunits = attribute "primitiveUnits"
+
+## Construct a `r` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/r) for more information.
+r : Str -> Attribute
+r = attribute "r"
+
+## Construct a `radius` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/radius) for more information.
+radius : Str -> Attribute
+radius = attribute "radius"
+
+## Construct a `refX` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/refx) for more information.
+refx : Str -> Attribute
+refx = attribute "refX"
+
+## Construct a `refY` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/refy) for more information.
+refy : Str -> Attribute
+refy = attribute "refY"
+
+## Construct a `repeatCount` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatcount) for more information.
+repeatcount : Str -> Attribute
+repeatcount = attribute "repeatCount"
+
+## Construct a `repeatDur` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatdur) for more information.
+repeatdur : Str -> Attribute
+repeatdur = attribute "repeatDur"
+
+## Construct a `restart` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/restart) for more information.
+restart : Str -> Attribute
+restart = attribute "restart"
+
+## Construct a `result` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/result) for more information.
+result : Str -> Attribute
+result = attribute "result"
+
+## Construct a `rotate` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rotate) for more information.
+rotate : Str -> Attribute
+rotate = attribute "rotate"
+
+## Construct a `rx` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) for more information.
+rx : Str -> Attribute
+rx = attribute "rx"
+
+## Construct a `ry` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ry) for more information.
+ry : Str -> Attribute
+ry = attribute "ry"
+
+## Construct a `scale` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/scale) for more information.
+scale : Str -> Attribute
+scale = attribute "scale"
+
+## Construct a `seed` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/seed) for more information.
+seed : Str -> Attribute
+seed = attribute "seed"
+
 ## Construct a `shape-rendering` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering) for more information.
 shapeRendering : Str -> Attribute
 shapeRendering = attribute "shape-rendering"
+
+## Construct a `side` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/side) for more information.
+side : Str -> Attribute
+side = attribute "side"
+
+## Construct a `spacing` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/spacing) for more information.
+spacing : Str -> Attribute
+spacing = attribute "spacing"
+
+## Construct a `specularConstant` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularconstant) for more information.
+specularconstant : Str -> Attribute
+specularconstant = attribute "specularConstant"
+
+## Construct a `specularExponent` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/specularexponent) for more information.
+specularexponent : Str -> Attribute
+specularexponent = attribute "specularExponent"
+
+## Construct a `spreadMethod` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/spreadmethod) for more information.
+spreadmethod : Str -> Attribute
+spreadmethod = attribute "spreadMethod"
+
+## Construct a `startOffset` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/startoffset) for more information.
+startoffset : Str -> Attribute
+startoffset = attribute "startOffset"
+
+## Construct a `stdDeviation` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stddeviation) for more information.
+stddeviation : Str -> Attribute
+stddeviation = attribute "stdDeviation"
+
+## Construct a `stitchTiles` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stitchtiles) for more information.
+stitchtiles : Str -> Attribute
+stitchtiles = attribute "stitchTiles"
 
 ## Construct a `stop-color` attribute.
 ##
@@ -590,6 +1023,18 @@ stopColor = attribute "stop-color"
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stop-opacity) for more information.
 stopOpacity : Str -> Attribute
 stopOpacity = attribute "stop-opacity"
+
+## Construct a `strikethrough-position` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/strikethrough-position) for more information.
+strikethroughPosition : Str -> Attribute
+strikethroughPosition = attribute "strikethrough-position"
+
+## Construct a `strikethrough-thickness` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/strikethrough-thickness) for more information.
+strikethroughThickness : Str -> Attribute
+strikethroughThickness = attribute "strikethrough-thickness"
 
 ## Construct a `stroke` attribute.
 ##
@@ -639,6 +1084,54 @@ strokeOpacity = attribute "stroke-opacity"
 strokeWidth : Str -> Attribute
 strokeWidth = attribute "stroke-width"
 
+## Construct a `style` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/style) for more information.
+style : Str -> Attribute
+style = attribute "style"
+
+## Construct a `surfaceScale` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfacescale) for more information.
+surfacescale : Str -> Attribute
+surfacescale = attribute "surfaceScale"
+
+## Construct a `systemLanguage` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/systemlanguage) for more information.
+systemlanguage : Str -> Attribute
+systemlanguage = attribute "systemLanguage"
+
+## Construct a `tabindex` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tabindex) for more information.
+tabindex : Str -> Attribute
+tabindex = attribute "tabindex"
+
+## Construct a `tableValues` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tablevalues) for more information.
+tablevalues : Str -> Attribute
+tablevalues = attribute "tableValues"
+
+## Construct a `target` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target) for more information.
+target : Str -> Attribute
+target = attribute "target"
+
+## Construct a `targetX` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetx) for more information.
+targetx : Str -> Attribute
+targetx = attribute "targetX"
+
+## Construct a `targetY` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targety) for more information.
+targety : Str -> Attribute
+targety = attribute "targetY"
+
 ## Construct a `text-anchor` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor) for more information.
@@ -657,6 +1150,18 @@ textDecoration = attribute "text-decoration"
 textRendering : Str -> Attribute
 textRendering = attribute "text-rendering"
 
+## Construct a `textLength` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/textlength) for more information.
+textlength : Str -> Attribute
+textlength = attribute "textLength"
+
+## Construct a `to` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/to) for more information.
+to : Str -> Attribute
+to = attribute "to"
+
 ## Construct a `transform` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform) for more information.
@@ -669,11 +1174,35 @@ transform = attribute "transform"
 transformOrigin : Str -> Attribute
 transformOrigin = attribute "transform-origin"
 
+## Construct a `type` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type) for more information.
+type : Str -> Attribute
+type = attribute "type"
+
+## Construct a `underline-position` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/underline-position) for more information.
+underlinePosition : Str -> Attribute
+underlinePosition = attribute "underline-position"
+
+## Construct a `underline-thickness` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/underline-thickness) for more information.
+underlineThickness : Str -> Attribute
+underlineThickness = attribute "underline-thickness"
+
 ## Construct a `unicode-bidi` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/unicode-bidi) for more information.
 unicodeBidi : Str -> Attribute
 unicodeBidi = attribute "unicode-bidi"
+
+## Construct a `values` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/values) for more information.
+values : Str -> Attribute
+values = attribute "values"
 
 ## Construct a `vector-effect` attribute.
 ##
@@ -681,11 +1210,23 @@ unicodeBidi = attribute "unicode-bidi"
 vectorEffect : Str -> Attribute
 vectorEffect = attribute "vector-effect"
 
+## Construct a `viewBox` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewbox) for more information.
+viewbox : Str -> Attribute
+viewbox = attribute "viewBox"
+
 ## Construct a `visibility` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/visibility) for more information.
 visibility : Str -> Attribute
 visibility = attribute "visibility"
+
+## Construct a `width` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width) for more information.
+width : Str -> Attribute
+width = attribute "width"
 
 ## Construct a `word-spacing` attribute.
 ##
@@ -699,31 +1240,29 @@ wordSpacing = attribute "word-spacing"
 writingMode : Str -> Attribute
 writingMode = attribute "writing-mode"
 
-# Filters attributes - Filter primitive attributes
-
-## Construct a `height` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height) for more information.
-height : Str -> Attribute
-height = attribute "height"
-
-## Construct a `result` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/result) for more information.
-result : Str -> Attribute
-result = attribute "result"
-
-## Construct a `width` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width) for more information.
-width : Str -> Attribute
-width = attribute "width"
-
 ## Construct a `x` attribute.
 ##
 ## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x) for more information.
 x : Str -> Attribute
 x = attribute "x"
+
+## Construct a `x1` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x1) for more information.
+x1 : Str -> Attribute
+x1 = attribute "x1"
+
+## Construct a `x2` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x2) for more information.
+x2 : Str -> Attribute
+x2 = attribute "x2"
+
+## Construct a `xChannelSelector` attribute.
+##
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xchannelselector) for more information.
+xchannelselector : Str -> Attribute
+xchannelselector = attribute "xChannelSelector"
 
 ## Construct a `y` attribute.
 ##
@@ -731,586 +1270,26 @@ x = attribute "x"
 y : Str -> Attribute
 y = attribute "y"
 
-# Filters attributes - Transfer function attributes
-
-## Construct a `type` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type) for more information.
-type : Str -> Attribute
-type = attribute "type"
-
-## Construct a `tableValues` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/tableValues) for more information.
-tablevalues : Str -> Attribute
-tablevalues = attribute "tableValues"
-
-## Construct a `slope` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/slope) for more information.
-slope : Str -> Attribute
-slope = attribute "slope"
-
-## Construct a `intercept` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/intercept) for more information.
-intercept : Str -> Attribute
-intercept = attribute "intercept"
-
-## Construct a `amplitude` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/amplitude) for more information.
-amplitude : Str -> Attribute
-amplitude = attribute "amplitude"
-
-## Construct a `exponent` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/exponent) for more information.
-exponent : Str -> Attribute
-exponent = attribute "exponent"
-
-## Construct a `offset` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/offset) for more information.
-offset : Str -> Attribute
-offset = attribute "offset"
-
-# Animation attributes - Animation target element attributes
-
-## Construct a `href` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href) for more information.
-href : Str -> Attribute
-href = attribute "href"
-
-# Animation attributes - Animation attribute target attributes
-
-## Construct a `attributeType` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeType) for more information.
-attributetype : Str -> Attribute
-attributetype = attribute "attributeType"
-
-## Construct a `attributeName` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/attributeName) for more information.
-attributename : Str -> Attribute
-attributename = attribute "attributeName"
-
-# Animation attributes - Animation timing attributes
-
-## Construct a `begin` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin) for more information.
-begin : Str -> Attribute
-begin = attribute "begin"
-
-## Construct a `dur` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dur) for more information.
-dur : Str -> Attribute
-dur = attribute "dur"
-
-## Construct a `end` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/end) for more information.
-end : Str -> Attribute
-end = attribute "end"
-
-## Construct a `min` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/min) for more information.
-min : Str -> Attribute
-min = attribute "min"
-
-## Construct a `max` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/max) for more information.
-max : Str -> Attribute
-max = attribute "max"
-
-## Construct a `restart` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/restart) for more information.
-restart : Str -> Attribute
-restart = attribute "restart"
-
-## Construct a `repeatCount` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatCount) for more information.
-repeatcount : Str -> Attribute
-repeatcount = attribute "repeatCount"
-
-## Construct a `repeatDur` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/repeatDur) for more information.
-repeatdur : Str -> Attribute
-repeatdur = attribute "repeatDur"
-
-# Animation attributes - Animation value attributes
-
-## Construct a `calcMode` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/calcMode) for more information.
-calcmode : Str -> Attribute
-calcmode = attribute "calcMode"
-
-## Construct a `values` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/values) for more information.
-values : Str -> Attribute
-values = attribute "values"
-
-## Construct a `keyTimes` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keyTimes) for more information.
-keytimes : Str -> Attribute
-keytimes = attribute "keyTimes"
-
-## Construct a `keySplines` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/keySplines) for more information.
-keysplines : Str -> Attribute
-keysplines = attribute "keySplines"
-
-## Construct a `from` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/from) for more information.
-from : Str -> Attribute
-from = attribute "from"
-
-## Construct a `to` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/to) for more information.
-to : Str -> Attribute
-to = attribute "to"
-
-## Construct a `by` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/by) for more information.
-by : Str -> Attribute
-by = attribute "by"
-
-## Construct a `autoReverse` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/autoReverse) for more information.
-autoreverse : Str -> Attribute
-autoreverse = attribute "autoReverse"
-
-## Construct a `accelerate` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/accelerate) for more information.
-accelerate : Str -> Attribute
-accelerate = attribute "accelerate"
-
-## Construct a `decelerate` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/decelerate) for more information.
-decelerate : Str -> Attribute
-decelerate = attribute "decelerate"
-
-# Animation attributes - Animation addition attributes
-
-## Construct a `additive` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/additive) for more information.
-additive : Str -> Attribute
-additive = attribute "additive"
-
-## Construct a `accumulate` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/accumulate) for more information.
-accumulate : Str -> Attribute
-accumulate = attribute "accumulate"
-
-# Event attributes - Animation event attributes
-
-## Construct a `onbegin` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onbegin) for more information.
-onbegin : Str -> Attribute
-onbegin = attribute "onbegin"
-
-## Construct a `onend` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onend) for more information.
-onend : Str -> Attribute
-onend = attribute "onend"
-
-## Construct a `onrepeat` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onrepeat) for more information.
-onrepeat : Str -> Attribute
-onrepeat = attribute "onrepeat"
-
-# Event attributes - Document event attributes
-
-## Construct a `onabort` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onabort) for more information.
-onabort : Str -> Attribute
-onabort = attribute "onabort"
-
-## Construct a `onerror` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onerror) for more information.
-onerror : Str -> Attribute
-onerror = attribute "onerror"
-
-## Construct a `onresize` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onresize) for more information.
-onresize : Str -> Attribute
-onresize = attribute "onresize"
-
-## Construct a `onscroll` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onscroll) for more information.
-onscroll : Str -> Attribute
-onscroll = attribute "onscroll"
-
-## Construct a `onunload` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onunload) for more information.
-onunload : Str -> Attribute
-onunload = attribute "onunload"
-
-# Event attributes - Global event attributes
-
-## Construct a `oncancel` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncancel) for more information.
-oncancel : Str -> Attribute
-oncancel = attribute "oncancel"
-
-## Construct a `oncanplay` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncanplay) for more information.
-oncanplay : Str -> Attribute
-oncanplay = attribute "oncanplay"
-
-## Construct a `oncanplaythrough` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncanplaythrough) for more information.
-oncanplaythrough : Str -> Attribute
-oncanplaythrough = attribute "oncanplaythrough"
-
-## Construct a `onchange` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onchange) for more information.
-onchange : Str -> Attribute
-onchange = attribute "onchange"
-
-## Construct a `onclick` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onclick) for more information.
-onclick : Str -> Attribute
-onclick = attribute "onclick"
-
-## Construct a `onclose` attribute.
+## Construct a `y1` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onclose) for more information.
-onclose : Str -> Attribute
-onclose = attribute "onclose"
-
-## Construct a `oncuechange` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oncuechange) for more information.
-oncuechange : Str -> Attribute
-oncuechange = attribute "oncuechange"
-
-## Construct a `ondblclick` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondblclick) for more information.
-ondblclick : Str -> Attribute
-ondblclick = attribute "ondblclick"
-
-## Construct a `ondrag` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondrag) for more information.
-ondrag : Str -> Attribute
-ondrag = attribute "ondrag"
-
-## Construct a `ondragend` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragend) for more information.
-ondragend : Str -> Attribute
-ondragend = attribute "ondragend"
-
-## Construct a `ondragenter` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragenter) for more information.
-ondragenter : Str -> Attribute
-ondragenter = attribute "ondragenter"
-
-## Construct a `ondragleave` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragleave) for more information.
-ondragleave : Str -> Attribute
-ondragleave = attribute "ondragleave"
-
-## Construct a `ondragover` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragover) for more information.
-ondragover : Str -> Attribute
-ondragover = attribute "ondragover"
-
-## Construct a `ondragstart` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondragstart) for more information.
-ondragstart : Str -> Attribute
-ondragstart = attribute "ondragstart"
-
-## Construct a `ondrop` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondrop) for more information.
-ondrop : Str -> Attribute
-ondrop = attribute "ondrop"
-
-## Construct a `ondurationchange` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ondurationchange) for more information.
-ondurationchange : Str -> Attribute
-ondurationchange = attribute "ondurationchange"
-
-## Construct a `onemptied` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onemptied) for more information.
-onemptied : Str -> Attribute
-onemptied = attribute "onemptied"
-
-## Construct a `onended` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onended) for more information.
-onended : Str -> Attribute
-onended = attribute "onended"
-
-## Construct a `onfocus` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onfocus) for more information.
-onfocus : Str -> Attribute
-onfocus = attribute "onfocus"
-
-## Construct a `oninput` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oninput) for more information.
-oninput : Str -> Attribute
-oninput = attribute "oninput"
-
-## Construct a `oninvalid` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/oninvalid) for more information.
-oninvalid : Str -> Attribute
-oninvalid = attribute "oninvalid"
-
-## Construct a `onkeydown` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeydown) for more information.
-onkeydown : Str -> Attribute
-onkeydown = attribute "onkeydown"
-
-## Construct a `onkeypress` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeypress) for more information.
-onkeypress : Str -> Attribute
-onkeypress = attribute "onkeypress"
-
-## Construct a `onkeyup` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onkeyup) for more information.
-onkeyup : Str -> Attribute
-onkeyup = attribute "onkeyup"
-
-## Construct a `onload` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onload) for more information.
-onload : Str -> Attribute
-onload = attribute "onload"
-
-## Construct a `onloadeddata` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadeddata) for more information.
-onloadeddata : Str -> Attribute
-onloadeddata = attribute "onloadeddata"
-
-## Construct a `onloadedmetadata` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadedmetadata) for more information.
-onloadedmetadata : Str -> Attribute
-onloadedmetadata = attribute "onloadedmetadata"
-
-## Construct a `onloadstart` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onloadstart) for more information.
-onloadstart : Str -> Attribute
-onloadstart = attribute "onloadstart"
-
-## Construct a `onmousedown` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousedown) for more information.
-onmousedown : Str -> Attribute
-onmousedown = attribute "onmousedown"
-
-## Construct a `onmouseenter` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseenter) for more information.
-onmouseenter : Str -> Attribute
-onmouseenter = attribute "onmouseenter"
-
-## Construct a `onmouseleave` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseleave) for more information.
-onmouseleave : Str -> Attribute
-onmouseleave = attribute "onmouseleave"
-
-## Construct a `onmousemove` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousemove) for more information.
-onmousemove : Str -> Attribute
-onmousemove = attribute "onmousemove"
-
-## Construct a `onmouseout` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseout) for more information.
-onmouseout : Str -> Attribute
-onmouseout = attribute "onmouseout"
-
-## Construct a `onmouseover` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseover) for more information.
-onmouseover : Str -> Attribute
-onmouseover = attribute "onmouseover"
-
-## Construct a `onmouseup` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmouseup) for more information.
-onmouseup : Str -> Attribute
-onmouseup = attribute "onmouseup"
-
-## Construct a `onmousewheel` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onmousewheel) for more information.
-onmousewheel : Str -> Attribute
-onmousewheel = attribute "onmousewheel"
-
-## Construct a `onpause` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onpause) for more information.
-onpause : Str -> Attribute
-onpause = attribute "onpause"
-
-## Construct a `onplay` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onplay) for more information.
-onplay : Str -> Attribute
-onplay = attribute "onplay"
-
-## Construct a `onplaying` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onplaying) for more information.
-onplaying : Str -> Attribute
-onplaying = attribute "onplaying"
-
-## Construct a `onprogress` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onprogress) for more information.
-onprogress : Str -> Attribute
-onprogress = attribute "onprogress"
-
-## Construct a `onratechange` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onratechange) for more information.
-onratechange : Str -> Attribute
-onratechange = attribute "onratechange"
-
-## Construct a `onreset` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onreset) for more information.
-onreset : Str -> Attribute
-onreset = attribute "onreset"
-
-## Construct a `onseeked` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onseeked) for more information.
-onseeked : Str -> Attribute
-onseeked = attribute "onseeked"
-
-## Construct a `onseeking` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onseeking) for more information.
-onseeking : Str -> Attribute
-onseeking = attribute "onseeking"
-
-## Construct a `onselect` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onselect) for more information.
-onselect : Str -> Attribute
-onselect = attribute "onselect"
-
-## Construct a `onshow` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onshow) for more information.
-onshow : Str -> Attribute
-onshow = attribute "onshow"
-
-## Construct a `onstalled` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onstalled) for more information.
-onstalled : Str -> Attribute
-onstalled = attribute "onstalled"
-
-## Construct a `onsubmit` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onsubmit) for more information.
-onsubmit : Str -> Attribute
-onsubmit = attribute "onsubmit"
-
-## Construct a `onsuspend` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onsuspend) for more information.
-onsuspend : Str -> Attribute
-onsuspend = attribute "onsuspend"
-
-## Construct a `ontimeupdate` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ontimeupdate) for more information.
-ontimeupdate : Str -> Attribute
-ontimeupdate = attribute "ontimeupdate"
-
-## Construct a `ontoggle` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ontoggle) for more information.
-ontoggle : Str -> Attribute
-ontoggle = attribute "ontoggle"
-
-## Construct a `onvolumechange` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onvolumechange) for more information.
-onvolumechange : Str -> Attribute
-onvolumechange = attribute "onvolumechange"
-
-## Construct a `onwaiting` attribute.
-##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onwaiting) for more information.
-onwaiting : Str -> Attribute
-onwaiting = attribute "onwaiting"
-
-# Event attributes - Graphical event attributes
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y1) for more information.
+y1 : Str -> Attribute
+y1 = attribute "y1"
 
-## Construct a `onactivate` attribute.
+## Construct a `y2` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onactivate) for more information.
-onactivate : Str -> Attribute
-onactivate = attribute "onactivate"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y2) for more information.
+y2 : Str -> Attribute
+y2 = attribute "y2"
 
-## Construct a `onfocusin` attribute.
+## Construct a `yChannelSelector` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onfocusin) for more information.
-onfocusin : Str -> Attribute
-onfocusin = attribute "onfocusin"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/ychannelselector) for more information.
+ychannelselector : Str -> Attribute
+ychannelselector = attribute "yChannelSelector"
 
-## Construct a `onfocusout` attribute.
+## Construct a `z` attribute.
 ##
-## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/onfocusout) for more information.
-onfocusout : Str -> Attribute
-onfocusout = attribute "onfocusout"
+## See the attribute's [MDN page](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/z) for more information.
+z : Str -> Attribute
+z = attribute "z"

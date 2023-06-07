@@ -6,44 +6,44 @@ interface Svg
         render,
         a,
         animate,
-        animatemotion,
-        animatetransform,
+        animateMotion,
+        animateTransform,
         circle,
-        clippath,
+        clipPath,
         defs,
         desc,
         ellipse,
-        feblend,
-        fecolormatrix,
-        fecomponenttransfer,
-        fecomposite,
-        feconvolvematrix,
-        fediffuselighting,
-        fedisplacementmap,
-        fedistantlight,
-        fedropshadow,
-        feflood,
-        fefunca,
-        fefuncb,
-        fefuncg,
-        fefuncr,
-        fegaussianblur,
-        feimage,
-        femerge,
-        femergenode,
-        femorphology,
-        feoffset,
-        fepointlight,
-        fespecularlighting,
-        fespotlight,
-        fetile,
-        feturbulence,
+        feBlend,
+        feColorMatrix,
+        feComponentTransfer,
+        feComposite,
+        feConvolveMatrix,
+        feDiffuseLighting,
+        feDisplacementMap,
+        feDistantLight,
+        feDropShadow,
+        feFlood,
+        feFuncA,
+        feFuncB,
+        feFuncG,
+        feFuncR,
+        feGaussianBlur,
+        feImage,
+        feMerge,
+        feMergeNode,
+        feMorphology,
+        feOffset,
+        fePointLight,
+        feSpecularLighting,
+        feSpotLight,
+        feTile,
+        feTurbulence,
         filter,
-        foreignobject,
+        foreignObject,
         g,
         image,
         line,
-        lineargradient,
+        linearGradient,
         marker,
         mask,
         metadata,
@@ -52,7 +52,7 @@ interface Svg
         pattern,
         polygon,
         polyline,
-        radialgradient,
+        radialGradient,
         rect,
         script,
         set,
@@ -62,7 +62,7 @@ interface Svg
         switch,
         symbol,
         textElement,
-        textpath,
+        textPath,
         title,
         tspan,
         use,
@@ -128,14 +128,14 @@ animate = element "animate"
 ## Construct an `animateMotion` element.
 ##
 ## See the [`animateMotion` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animatemotion) for more information.
-animatemotion : List Attribute, List Node -> Node
-animatemotion = element "animateMotion"
+animateMotion : List Attribute, List Node -> Node
+animateMotion = element "animateMotion"
 
 ## Construct an `animateTransform` element.
 ##
 ## See the [`animateTransform` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animatetransform) for more information.
-animatetransform : List Attribute, List Node -> Node
-animatetransform = element "animateTransform"
+animateTransform : List Attribute, List Node -> Node
+animateTransform = element "animateTransform"
 
 ## Construct a `circle` element.
 ##
@@ -146,8 +146,8 @@ circle = element "circle"
 ## Construct a `clipPath` element.
 ##
 ## See the [`clipPath` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clippath) for more information.
-clippath : List Attribute, List Node -> Node
-clippath = element "clipPath"
+clipPath : List Attribute, List Node -> Node
+clipPath = element "clipPath"
 
 ## Construct a `defs` element.
 ##
@@ -170,152 +170,152 @@ ellipse = element "ellipse"
 ## Construct a `feBlend` element.
 ##
 ## See the [`feBlend` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feblend) for more information.
-feblend : List Attribute, List Node -> Node
-feblend = element "feBlend"
+feBlend : List Attribute, List Node -> Node
+feBlend = element "feBlend"
 
 ## Construct a `feColorMatrix` element.
 ##
 ## See the [`feColorMatrix` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fecolormatrix) for more information.
-fecolormatrix : List Attribute, List Node -> Node
-fecolormatrix = element "feColorMatrix"
+feColorMatrix : List Attribute, List Node -> Node
+feColorMatrix = element "feColorMatrix"
 
 ## Construct a `feComponentTransfer` element.
 ##
 ## See the [`feComponentTransfer` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fecomponenttransfer) for more information.
-fecomponenttransfer : List Attribute, List Node -> Node
-fecomponenttransfer = element "feComponentTransfer"
+feComponentTransfer : List Attribute, List Node -> Node
+feComponentTransfer = element "feComponentTransfer"
 
 ## Construct a `feComposite` element.
 ##
 ## See the [`feComposite` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fecomposite) for more information.
-fecomposite : List Attribute, List Node -> Node
-fecomposite = element "feComposite"
+feComposite : List Attribute, List Node -> Node
+feComposite = element "feComposite"
 
 ## Construct a `feConvolveMatrix` element.
 ##
 ## See the [`feConvolveMatrix` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feconvolvematrix) for more information.
-feconvolvematrix : List Attribute, List Node -> Node
-feconvolvematrix = element "feConvolveMatrix"
+feConvolveMatrix : List Attribute, List Node -> Node
+feConvolveMatrix = element "feConvolveMatrix"
 
 ## Construct a `feDiffuseLighting` element.
 ##
 ## See the [`feDiffuseLighting` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fediffuselighting) for more information.
-fediffuselighting : List Attribute, List Node -> Node
-fediffuselighting = element "feDiffuseLighting"
+feDiffuseLighting : List Attribute, List Node -> Node
+feDiffuseLighting = element "feDiffuseLighting"
 
 ## Construct a `feDisplacementMap` element.
 ##
 ## See the [`feDisplacementMap` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fedisplacementmap) for more information.
-fedisplacementmap : List Attribute, List Node -> Node
-fedisplacementmap = element "feDisplacementMap"
+feDisplacementMap : List Attribute, List Node -> Node
+feDisplacementMap = element "feDisplacementMap"
 
 ## Construct a `feDistantLight` element.
 ##
 ## See the [`feDistantLight` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fedistantlight) for more information.
-fedistantlight : List Attribute, List Node -> Node
-fedistantlight = element "feDistantLight"
+feDistantLight : List Attribute, List Node -> Node
+feDistantLight = element "feDistantLight"
 
 ## Construct a `feDropShadow` element.
 ##
 ## See the [`feDropShadow` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fedropshadow) for more information.
-fedropshadow : List Attribute, List Node -> Node
-fedropshadow = element "feDropShadow"
+feDropShadow : List Attribute, List Node -> Node
+feDropShadow = element "feDropShadow"
 
 ## Construct a `feFlood` element.
 ##
 ## See the [`feFlood` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feflood) for more information.
-feflood : List Attribute, List Node -> Node
-feflood = element "feFlood"
+feFlood : List Attribute, List Node -> Node
+feFlood = element "feFlood"
 
 ## Construct a `feFuncA` element.
 ##
 ## See the [`feFuncA` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fefunca) for more information.
-fefunca : List Attribute, List Node -> Node
-fefunca = element "feFuncA"
+feFuncA : List Attribute, List Node -> Node
+feFuncA = element "feFuncA"
 
 ## Construct a `feFuncB` element.
 ##
 ## See the [`feFuncB` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fefuncb) for more information.
-fefuncb : List Attribute, List Node -> Node
-fefuncb = element "feFuncB"
+feFuncB : List Attribute, List Node -> Node
+feFuncB = element "feFuncB"
 
 ## Construct a `feFuncG` element.
 ##
 ## See the [`feFuncG` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fefuncg) for more information.
-fefuncg : List Attribute, List Node -> Node
-fefuncg = element "feFuncG"
+feFuncG : List Attribute, List Node -> Node
+feFuncG = element "feFuncG"
 
 ## Construct a `feFuncR` element.
 ##
 ## See the [`feFuncR` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fefuncr) for more information.
-fefuncr : List Attribute, List Node -> Node
-fefuncr = element "feFuncR"
+feFuncR : List Attribute, List Node -> Node
+feFuncR = element "feFuncR"
 
 ## Construct a `feGaussianBlur` element.
 ##
 ## See the [`feGaussianBlur` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fegaussianblur) for more information.
-fegaussianblur : List Attribute, List Node -> Node
-fegaussianblur = element "feGaussianBlur"
+feGaussianBlur : List Attribute, List Node -> Node
+feGaussianBlur = element "feGaussianBlur"
 
 ## Construct a `feImage` element.
 ##
 ## See the [`feImage` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feimage) for more information.
-feimage : List Attribute, List Node -> Node
-feimage = element "feImage"
+feImage : List Attribute, List Node -> Node
+feImage = element "feImage"
 
 ## Construct a `feMerge` element.
 ##
 ## See the [`feMerge` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/femerge) for more information.
-femerge : List Attribute, List Node -> Node
-femerge = element "feMerge"
+feMerge : List Attribute, List Node -> Node
+feMerge = element "feMerge"
 
 ## Construct a `feMergeNode` element.
 ##
 ## See the [`feMergeNode` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/femergenode) for more information.
-femergenode : List Attribute, List Node -> Node
-femergenode = element "feMergeNode"
+feMergeNode : List Attribute, List Node -> Node
+feMergeNode = element "feMergeNode"
 
 ## Construct a `feMorphology` element.
 ##
 ## See the [`feMorphology` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/femorphology) for more information.
-femorphology : List Attribute, List Node -> Node
-femorphology = element "feMorphology"
+feMorphology : List Attribute, List Node -> Node
+feMorphology = element "feMorphology"
 
 ## Construct a `feOffset` element.
 ##
 ## See the [`feOffset` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feoffset) for more information.
-feoffset : List Attribute, List Node -> Node
-feoffset = element "feOffset"
+feOffset : List Attribute, List Node -> Node
+feOffset = element "feOffset"
 
 ## Construct a `fePointLight` element.
 ##
 ## See the [`fePointLight` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fepointlight) for more information.
-fepointlight : List Attribute, List Node -> Node
-fepointlight = element "fePointLight"
+fePointLight : List Attribute, List Node -> Node
+fePointLight = element "fePointLight"
 
 ## Construct a `feSpecularLighting` element.
 ##
 ## See the [`feSpecularLighting` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fespecularlighting) for more information.
-fespecularlighting : List Attribute, List Node -> Node
-fespecularlighting = element "feSpecularLighting"
+feSpecularLighting : List Attribute, List Node -> Node
+feSpecularLighting = element "feSpecularLighting"
 
 ## Construct a `feSpotLight` element.
 ##
 ## See the [`feSpotLight` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fespotlight) for more information.
-fespotlight : List Attribute, List Node -> Node
-fespotlight = element "feSpotLight"
+feSpotLight : List Attribute, List Node -> Node
+feSpotLight = element "feSpotLight"
 
 ## Construct a `feTile` element.
 ##
 ## See the [`feTile` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fetile) for more information.
-fetile : List Attribute, List Node -> Node
-fetile = element "feTile"
+feTile : List Attribute, List Node -> Node
+feTile = element "feTile"
 
 ## Construct a `feTurbulence` element.
 ##
 ## See the [`feTurbulence` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feturbulence) for more information.
-feturbulence : List Attribute, List Node -> Node
-feturbulence = element "feTurbulence"
+feTurbulence : List Attribute, List Node -> Node
+feTurbulence = element "feTurbulence"
 
 ## Construct a `filter` element.
 ##
@@ -326,8 +326,8 @@ filter = element "filter"
 ## Construct a `foreignObject` element.
 ##
 ## See the [`foreignObject` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignobject) for more information.
-foreignobject : List Attribute, List Node -> Node
-foreignobject = element "foreignObject"
+foreignObject : List Attribute, List Node -> Node
+foreignObject = element "foreignObject"
 
 ## Construct a `g` element.
 ##
@@ -350,8 +350,8 @@ line = element "line"
 ## Construct a `linearGradient` element.
 ##
 ## See the [`linearGradient` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/lineargradient) for more information.
-lineargradient : List Attribute, List Node -> Node
-lineargradient = element "linearGradient"
+linearGradient : List Attribute, List Node -> Node
+linearGradient = element "linearGradient"
 
 ## Construct a `marker` element.
 ##
@@ -404,8 +404,8 @@ polyline = element "polyline"
 ## Construct a `radialGradient` element.
 ##
 ## See the [`radialGradient` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/radialgradient) for more information.
-radialgradient : List Attribute, List Node -> Node
-radialgradient = element "radialGradient"
+radialGradient : List Attribute, List Node -> Node
+radialGradient = element "radialGradient"
 
 ## Construct a `rect` element.
 ##
@@ -464,8 +464,8 @@ textElement = element "text"
 ## Construct a `textPath` element.
 ##
 ## See the [`textPath` element page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textpath) for more information.
-textpath : List Attribute, List Node -> Node
-textpath = element "textPath"
+textPath : List Attribute, List Node -> Node
+textPath = element "textPath"
 
 ## Construct a `title` element.
 ##

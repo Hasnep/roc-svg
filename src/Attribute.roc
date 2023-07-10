@@ -180,6 +180,8 @@ interface Attribute
         x1,
         x2,
         xChannelSelector,
+        xmlns,
+        xmlnsXlink,
         y,
         y1,
         y2,
@@ -1263,6 +1265,14 @@ x2 = attribute "x2"
 ## See the [xChannelSelector attribute page on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xchannelselector) for more information.
 xChannelSelector : Str -> Attribute
 xChannelSelector = attribute "xChannelSelector"
+
+## Construct a `xmlns` attribute.
+xmlns : Str -> Attribute
+xmlns = attribute "xmlns"
+
+## Construct a `xmlns:xlink` attribute.
+xmlnsXlink : Str -> Attribute
+xmlnsXlink = attribute "xmlns:xlink"
 
 ## Construct a `y` attribute.
 ##

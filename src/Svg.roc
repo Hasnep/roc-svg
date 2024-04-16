@@ -92,13 +92,13 @@ render = \node ->
             "<$(tagName)$(attributesStr)>$(childrenStr)</$(tagName)>"
 
 expect
-    width = Attribute.attribute "width"
-    height = Attribute.attribute "height"
-    xmlns = Attribute.attribute "xmlns"
-    cx = Attribute.attribute "cx"
-    cy = Attribute.attribute "cy"
-    r = Attribute.attribute "r"
-    fill = Attribute.attribute "fill"
+    width = attribute "width"
+    height = attribute "height"
+    xmlns = attribute "xmlns"
+    cx = attribute "cx"
+    cy = attribute "cy"
+    r = attribute "r"
+    fill = attribute "fill"
     out =
         svg [width "100", height "100", xmlns "http://www.w3.org/2000/svg"] [
             circle

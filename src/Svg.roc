@@ -87,9 +87,9 @@ render = \node ->
     when node is
         Text content -> content
         Element tagName attributes children ->
-            attributesStr = attributes |> List.map (\Attribute attributeKey attributeValue -> " \(attributeKey)=\"\(attributeValue)\"") |> Str.joinWith ""
+            attributesStr = attributes |> List.map (\Attribute attributeKey attributeValue -> " $(attributeKey)=\"$(attributeValue)\"") |> Str.joinWith ""
             childrenStr = children |> List.map render |> Str.joinWith ""
-            "<\(tagName)\(attributesStr)>\(childrenStr)</\(tagName)>"
+            "<$(tagName)$(attributesStr)>$(childrenStr)</$(tagName)>"
 
 expect
     width = Attribute.attribute "width"
